@@ -14,6 +14,7 @@ public class Transaction {
     private Long id;
     private LocalDateTime transactionDateTime;
     private Integer price;
+    private Long amount;
     private String customerName;
 
     public String getCustomerName() {
@@ -50,5 +51,9 @@ public class Transaction {
 
     public void setPrice(Integer price) {
         this.price = price;
+    }
+
+    public Long getAmount() {
+        return amount;
     }
 }
